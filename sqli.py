@@ -1,4 +1,4 @@
-text = int(input("how many  > "))
+text = int(input("Order by how many? > "))
 print("\n")
 def encode(intext):
     s = intext.encode('utf-8')
