@@ -8,8 +8,8 @@ def encode(intext):
     print("\n")
 i = 1
 amount = ''
-while i < text:
-    if i < text -1:
+while i <= text:
+    if i <= text -1:
         amount = amount + str(i)+","
     else:
         amount = amount + str(i)
