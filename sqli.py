@@ -1,4 +1,4 @@
-text = int(input("Order by how many? > "))
+text = int(input("Order by how many columns? > "))
 print("\n")
 def encode(intext):
     s = intext.encode('utf-8')
