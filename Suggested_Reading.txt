@@ -8,3 +8,9 @@ ISBN-10: 1597499633
 
 "Securing SQL Server: DBAs Defending the Database"
 ISBN-10: 1484241606
+
+Interactive Activities:
+
+https://www.w3schools.com/sql/default.asp
+
+http://www.webscantest.com/
